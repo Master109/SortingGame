@@ -15,7 +15,7 @@ static MainScene* _sharedMySingleton = nil;
 CGPoint _pTouchLoc;
 CGPoint _moveVec;
 Global* global;
-NSArray* squares;
+NSMutableArray* squares;
 Square* draggingSquare;
 CCNode *square;
 
@@ -55,13 +55,16 @@ CCNode *square;
 - (void)didLoadFromCCB
 {
     global = [Global sharedMySingleton];
+    squares = [[NSMutableArray alloc] initWithCapacity:0];
+    [squares addObject:[self getChildByName:@"Square" recursively:TRUE]];
 }
     
 -(void)update:(CCTime)delta
 {
     if (draggingSquare != nil)
     {
-       draggingSquare.position = [global VectorAdd:draggingSquare.position to:_moveVec];
+        NSLog(@"1");
+        [draggingSquare.physicsBody applyImpulse:_moveVec];
     }
 }
 
@@ -69,15 +72,18 @@ CCNode *square;
 {
     for  (Square* s in squares)
     {
-        if ([global Distance:s.position to:[touch locationInNode:self]] < 10)
+        if ([global Distance:s.positionInPoints to:[touch locationInWorld]] < 40)
+        {
             draggingSquare = s;
+            //NSLog(@"1");
+        }
     }
     _pTouchLoc = [touch locationInNode:self];
 }
 
 - (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    _moveVec = [global VectorMultFloat:[global VectorSub:[touch locationInNode:self] from:_pTouchLoc] by:60];
+    _moveVec = [global VectorMultFloat:[global VectorSub:[touch locationInNode:self] from:_pTouchLoc] by:2000000000000];
     _pTouchLoc = [touch locationInNode:self];
 }
 
@@ -85,7 +91,5 @@ CCNode *square;
 {
     draggingSquare = nil;
 }
-
-
 
 @end
