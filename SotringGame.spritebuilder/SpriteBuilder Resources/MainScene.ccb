@@ -168,7 +168,7 @@
 				<key>displayName</key>
 				<string>CCNodeColor</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_redPlatform</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -180,11 +180,15 @@
 					<key>bodyShape</key>
 					<integer>0</integer>
 					<key>collisionCategories</key>
-					<array/>
+					<array>
+						<string>platform</string>
+					</array>
 					<key>collisionMask</key>
-					<array/>
+					<array>
+						<string>square</string>
+					</array>
 					<key>collisionType</key>
-					<string>platform1</string>
+					<string>platform</string>
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
@@ -332,7 +336,7 @@
 				<key>displayName</key>
 				<string>CCNodeColor</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_bluePlatform</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -344,11 +348,15 @@
 					<key>bodyShape</key>
 					<integer>0</integer>
 					<key>collisionCategories</key>
-					<array/>
+					<array>
+						<string>platform</string>
+					</array>
 					<key>collisionMask</key>
-					<array/>
+					<array>
+						<string>square</string>
+					</array>
 					<key>collisionType</key>
-					<string>platform2</string>
+					<string>platform</string>
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
@@ -417,7 +425,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.34400001168251038</real>
+							<real>0.33775001764297485</real>
 							<real>0.0</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -496,7 +504,7 @@
 				<key>displayName</key>
 				<string>CCNodeColor</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_greenPlatform</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -508,11 +516,15 @@
 					<key>bodyShape</key>
 					<integer>0</integer>
 					<key>collisionCategories</key>
-					<array/>
+					<array>
+						<string>platform</string>
+					</array>
 					<key>collisionMask</key>
-					<array/>
+					<array>
+						<string>square</string>
+					</array>
 					<key>collisionType</key>
-					<string>platform3</string>
+					<string>platform</string>
 					<key>cornerRadius</key>
 					<real>0.0</real>
 					<key>density</key>
@@ -534,24 +546,24 @@
 							<real>100</real>
 						</array>
 						<array>
-							<real>94.457786560058594</real>
-							<real>101.95161437988281</real>
+							<real>91.231491088867188</real>
+							<real>102.97887420654297</real>
 						</array>
 						<array>
-							<real>95.609405517578125</real>
-							<real>4.0218939781188965</real>
+							<real>90.283340454101562</real>
+							<real>4.5414042472839355</real>
 						</array>
 					</array>
 					<key>polygons</key>
 					<array>
 						<array>
 							<array>
-								<real>95.609405517578125</real>
-								<real>4.0218939781188965</real>
+								<real>90.283340454101562</real>
+								<real>4.5414042472839355</real>
 							</array>
 							<array>
-								<real>94.457786560058594</real>
-								<real>101.95161437988281</real>
+								<real>91.231491088867188</real>
+								<real>102.97887420654297</real>
 							</array>
 							<array>
 								<real>0.0</real>
@@ -581,7 +593,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.6920313835144043</real>
+							<real>0.68578135967254639</real>
 							<real>-0.00075497804209589958</real>
 							<integer>0</integer>
 							<integer>2</integer>
@@ -1268,8 +1280,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
