@@ -20,15 +20,6 @@
 	<integer>0</integer>
 	<key>engine</key>
 	<integer>0</integer>
-<<<<<<< HEAD
-=======
-	<key>excludedFromPackageMigration</key>
-<<<<<<< HEAD
-	<integer>1</integer>
-=======
-	<integer>0</integer>
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
 	<key>exporter</key>
 	<string>ccbi</string>
 	<key>fileType</key>
@@ -38,7 +29,7 @@
 	<key>flattenPaths</key>
 	<false/>
 	<key>needRepublish</key>
-	<true/>
+	<false/>
 	<key>onlyPublishCCBs</key>
 	<false/>
 	<key>publishAudioQuality_android</key>
