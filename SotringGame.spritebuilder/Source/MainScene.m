@@ -59,7 +59,7 @@ Square* draggingSquare;
 {
     if (draggingSquare != nil)
     {
-        s.position = [global VectorAdd:s.position to:_moveVec];
+       draggingSquare.position = [global VectorAdd:draggingSquare.position to:_moveVec];
     }
 }
 
