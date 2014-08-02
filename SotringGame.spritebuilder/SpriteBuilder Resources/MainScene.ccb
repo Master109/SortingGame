@@ -188,13 +188,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-<<<<<<< HEAD
-							<real>161.78982543945312</real>
-							<real>254.44744873046875</real>
-=======
 							<real>159</real>
 							<real>255</real>
->>>>>>> FETCH_HEAD
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
