@@ -21,7 +21,11 @@
 	<key>engine</key>
 	<integer>0</integer>
 	<key>excludedFromPackageMigration</key>
+<<<<<<< HEAD
 	<integer>1</integer>
+=======
+	<integer>0</integer>
+>>>>>>> FETCH_HEAD
 	<key>exporter</key>
 	<string>ccbi</string>
 	<key>fileType</key>
