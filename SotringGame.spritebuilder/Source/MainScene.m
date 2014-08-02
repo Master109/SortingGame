@@ -18,6 +18,7 @@ Global* global;
 NSArray* squares;
 Square* draggingSquare;
 
+
 +(MainScene*)sharedMySingleton
 {
     @synchronized([MainScene class])
@@ -83,5 +84,7 @@ Square* draggingSquare;
 {
     draggingSquare = nil;
 }
+
+
 
 @end
