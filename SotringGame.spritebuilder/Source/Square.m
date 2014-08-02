@@ -9,5 +9,10 @@
 #import "Square.h"
 
 @implementation Square
+{
+    CCNode *square;
+}
+
+
 
 @end

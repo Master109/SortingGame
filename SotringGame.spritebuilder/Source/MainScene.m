@@ -17,6 +17,7 @@ CGPoint _moveVec;
 Global* global;
 NSArray* squares;
 Square* draggingSquare;
+CCNode *square;
 
 
 +(MainScene*)sharedMySingleton
@@ -84,7 +85,6 @@ Square* draggingSquare;
 {
     draggingSquare = nil;
 }
-
 
 
 @end
