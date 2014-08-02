@@ -1259,7 +1259,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>play</string>
+							<string>Play</string>
 							<integer>1</integer>
 						</array>
 					</dict>
@@ -1527,8 +1527,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -1600,7 +1598,7 @@
 						<string>Block</string>
 						<key>value</key>
 						<array>
-							<string>mainMenu</string>
+							<string>MainMenu</string>
 							<integer>1</integer>
 						</array>
 					</dict>
