@@ -1189,7 +1189,7 @@
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string>startScreen</string>
+		<string>StartScene</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

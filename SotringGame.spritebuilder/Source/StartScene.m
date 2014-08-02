@@ -10,4 +10,16 @@
 
 @implementation StartScene
 
+
+
+
+
+-(void) play
+{
+    CCScene *MainScene = [CCBReader loadAsScene: @"MainScene"];
+    CCTransition *transition = [CCTransition transitionCrossFadeWithDuration:1.f];
+    [[CCDirector sharedDirector] replaceScene:MainScene withTransition:transition];
+}
+
+
 @end
